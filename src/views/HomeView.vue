@@ -55,10 +55,6 @@
           <button class="primary btn px-4 py-2 m-1" @click="play">play <i data-feather="play-circle"></i></button>
           <button class="primary btn px-4 py-2 m-1" @click="pause">pause</button>
           <button class="primary btn px-4 py-2 m-1" @click="stop">stop</button>
-          <button class="primary btn px-4 py-2 m-1" @click="setSpeed(0.5)">0.5x</button>
-          <button class="primary btn px-4 py-2 m-1" @click="setSpeed(1)">1x</button>
-          <button class="primary btn px-4 py-2 m-1" @click="setSpeed(1.5)">1.5x</button>
-          <button class="primary btn px-4 py-2 m-1" @click="setSpeed(2)">2x</button>
         </div>
     </div>
     </div>
