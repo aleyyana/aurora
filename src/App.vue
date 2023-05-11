@@ -7,18 +7,18 @@ import { RouterLink, RouterView } from 'vue-router';
 <template>
 
 <div class="container-fluid">
-  <nav class="nav navbar navbar-expand-lg center">
+  <nav class="nav navbar navbar-expand-lg center ">
     <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo"></RouterLink>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item menu-links ">
-          <RouterLink  to="/">Home</RouterLink>
+          <RouterLink class="nav-link"  to="/">Home</RouterLink>
         </li>
         <li class="nav-item menu-links ">
-          <RouterLink to ="/horoscope">Daily horoscope</RouterLink>
+          <RouterLink class="nav-link" to ="/horoscope">Daily horoscope</RouterLink>
         </li>
         <li class="nav-item menu-links ">
-          <RouterLink to="/about">About</RouterLink>
+          <RouterLink class="nav-link" to="/about">About</RouterLink>
         </li>
       </ul>
     </div>

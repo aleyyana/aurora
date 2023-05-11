@@ -6,7 +6,7 @@
       </div>
       <div class="blank-space2"></div>
   </div>
-  <div id="app" class="container">
+  <!-- <div id="app" class="container">
       <div class="carousel" id="carousel">
             <div class="row">
                 <div class="col text-center mb-2">
@@ -98,90 +98,10 @@
                 </div>
             </div>
       </div>
-      <div class="col-12">
-        <transition name="fade">
-          <aquarius-sign
-              v-show="showAquarius"
-          />        
-        </transition>
-      </div>
-      <div class="col-12">
-        <transition name="fade">
-          <pisces-sign 
-              v-show="showPisces"
-          />
-        </transition>
-      </div>
-      <div class="col-12">
-        <transition name="fade">
-          <aries-sign
-              v-show="showAries"
-          />
-        </transition>
-      </div>
-      <div class="col-12">
-        <transition name ="fade">
-          <taurus-sign 
-              v-show="showTaurus"
-          />
-        </transition>
-      </div>
-      <div class="col-12">
-        <transition name="fade">
-          <gemini-sign
-              v-show="showGemini"
-          />
-      </transition>
-      </div>
-      <div class="col-12">
-        <transition name="fade">
-          <cancer-sign
-            v-show="showCancer" 
-            />
-        </transition>
-      </div>
-      <div class="col-12">
-        <transition name="fade">
-          <leo-sign
-            v-show="showLeo"
-          />
-        </transition>
-      </div>
-      <div class="col-12">
-        <transition name="fade">
-          <virgo-sign
-            v-show="showVirgo"
-          />
-          </transition>
-      </div>
-      <div class="col-12">
-        <transition name="fade">
-          <libra-sign
-            v-show="showLibra"
-          />
-          </transition>
-      </div>
-      <div class="col-12">
-        <transition name="fade">
-          <scorpio-sign
-            v-show="showScorpio"
-          />
-          </transition>
-      </div>
-      <div class="col-12">
-        <transition name="fade">
-          <sagittarius-sign
-            v-show="showSagittarius"
-          />
-          </transition>
-      </div>
-      <div class="col-12">
-        <transition name="fade">
-          <capricorn-sign
-            v-show="showCapricorn"
-          />
-          </transition>
-      </div>
+  </div> -->
+
+  <div id="app">
+    
   </div>
 
 </template>

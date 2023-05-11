@@ -12,6 +12,7 @@
     "vue": "^3.2.45",
     "vue-axios": "^3.5.2",
     "vue-glitched-writer": "^1.2.2",
+    "vue-kinesis": "^2.0.5",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
