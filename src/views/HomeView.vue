@@ -3,18 +3,66 @@
 </script>
 <template>
 
-<div class="app container-fluid">
+  <div id="grid">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3 col-md-offset-1 col-md-2">
+          <div class="grid-line"></div>
+        </div>
+        <div class="col-xs-3 col-md-2">
+          <div class="grid-line"></div>
+        </div>
+        <div class="col-xs-3 col-md-2">
+          <div class="grid-line"></div>
+        </div>
+        <div class="col-xs-3 col-md-2">
+          <div class="grid-line"></div>
+        </div>
+        <div class="col-xs-3 col-md-2">
+          <div class="grid-line"></div>
+        </div>
+        <div class="col-xs-3 col-md-2">
+          <div class="grid-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+<!-- <div id="app" class="container">
 
-</div>
+  <div class="kine position-absolute top-50 start-50">
+      <kinesis-container class="">
+      <h1>Aurora</h1> 
+        <kinesis-element :strength="10"> <h1>Let's</h1></kinesis-element>
+        <kinesis-element :strength="20"> <h1>Stargaze</h1> </kinesis-element>
+      </kinesis-container>
+    </div>
+ 
+</div> -->
 
-  <div class="blank-space"></div>
+  <!-- <div class="blank-space"></div>
 
-     <!-- <h1 class="main_title">{{title}}</h1> -->
+   <h1 class="main_title">{{title}}</h1> --> -->
 </template>
 
 <style scoped>
-h1{
+
+#grid{
+  position:fixed;
+  width: 100%;
+}
+
+.col-xs-3{
+  width:25%;
+}
+
+.grid-line{
+  border-left-color: var(--secondary-color);
+  height: 100vh;
+  border-left: 1px solid
+
+}
+/* h1{
     font-size: 100px;
 }
 h3, .quote {
@@ -26,16 +74,19 @@ h3, .quote {
 }
 
 
+
+
 h4{
     font-size: 40px;
-}
+} */
+
+
 
 </style>
 
 <script>  
   import GlitchedWriter from 'vue-glitched-writer'
-  // import KinesisContainer from "vue-kinesis"
-  // import KinesisElement from "vue-kinesis"
+  import { KinesisContainer, KinesisElement } from "vue-kinesis";
 
   export default {
   data(){
@@ -46,8 +97,8 @@ h4{
     name: "HomePage",
     components:{
       GlitchedWriter,
-      // KinesisContainer,
-      // KinesisElement
+      KinesisContainer,
+      KinesisElement
 
     },
     methods: {

@@ -6,24 +6,30 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
 
-<div class="container-fluid">
-  <nav class="nav navbar navbar-expand-lg center ">
+  <div class="container">
+    <nav class="nav">
+      <RouterLink to="/" ><img src="../src/assets/img/logo_1.png" alt="logo" class="logo"></RouterLink>
+    </nav>
+  </div>
+
+<!-- <div class="container-fluid">
+  <nav class="nav navbar justify-content-center">
     <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo"></RouterLink>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item menu-links ">
-          <RouterLink class="nav-link"  to="/">Home</RouterLink>
-        </li>
-        <li class="nav-item menu-links ">
-          <RouterLink class="nav-link" to ="/horoscope">Daily horoscope</RouterLink>
-        </li>
-        <li class="nav-item menu-links ">
-          <RouterLink class="nav-link" to="/about">About</RouterLink>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item menu-links ">
+            <RouterLink class="nav-link"  to="/">Home</RouterLink>
+          </li>
+          <li class="nav-item menu-links ">
+            <RouterLink class="nav-link" to ="/horoscope">Daily horoscope</RouterLink>
+          </li>
+          <li class="nav-item menu-links ">
+            <RouterLink class="nav-link" to="/about">About</RouterLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>  -->
 <hr>
   <RouterView />
   <div class="blank-space"></div>
@@ -65,37 +71,10 @@ header {
   max-height: 100vh;
 }
 
-.logo {
+.logo{
   display: block;
   margin: 0 auto 2rem;
   width:3vw;
-}
-
-nav {
-  width: 100%;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 2rem;
-  display: flex;
-    flex-flow: row  wrap;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav li a{
-  display:inline-block;
-  padding: 0 1rem;
-  text-decoration: none;
-  color: var(--main-color);
-  flex-direction: row;
-}
-
-nav li a:hover{
-  color:var(--secondary-color)
 }
 
 .menu-links{
