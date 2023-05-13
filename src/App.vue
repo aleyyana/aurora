@@ -8,33 +8,24 @@ import { RouterLink, RouterView } from 'vue-router';
 
   <div class="container">
     <nav class="nav">
-      <li>
+      <li class="nav-item menu-links">
         <RouterLink to="/" ><img src="../src/assets/img/logo_1.png" alt="logo" class="logo nav-link"></RouterLink>
       </li>
-      <li>
+      <li class="nav-item menu-links">
+            <RouterLink class="nav-link"  to="/">Home</RouterLink>
+          </li>
+      <li class="nav-item menu-links">
         <RouterLink class="nav-link" to ="/horoscope">Daily horoscope</RouterLink>
+      </li>
+      <li class="nav-item menu-links">
+        <RouterLink class="nav-link" to="/love">Compatibility</RouterLink>
+      </li>
+      <li class="nav-item menu-links">
+        <RouterLink class="nav-link" to="/about">About</RouterLink>
       </li>
     </nav>
   </div>
 
-<!-- <div class="container-fluid">
-  <nav class="nav navbar justify-content-center">
-    <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo"></RouterLink>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item menu-links ">
-            <RouterLink class="nav-link"  to="/">Home</RouterLink>
-          </li>
-          <li class="nav-item menu-links ">
-            <RouterLink class="nav-link" to ="/horoscope">Daily horoscope</RouterLink>
-          </li>
-          <li class="nav-item menu-links ">
-            <RouterLink class="nav-link" to="/about">About</RouterLink>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>  -->
 <hr>
   <RouterView />
   <div class="blank-space"></div>
@@ -71,10 +62,6 @@ h1{
 h2{
   font-size: var(--title-size);
 } 
-
-header {
-  max-height: 100vh;
-}
 
 .logo{
   display: block;
