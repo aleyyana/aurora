@@ -35,7 +35,7 @@
   </div>
   <div class="blank-space"></div>
   
-  <div class="container mt-5 text-center">
+  <!-- <div class="container mt-5 text-center">
       <div class="row pt-3">
           <div class="col">
               <img class="hand" src="../assets/img/hand_1.png" alt="">
@@ -64,7 +64,7 @@
                               <textarea id="msg" name="user_message" class="form-control" v-model="message"></textarea>
                           </div>
                           <input  class="btn primary mt-3" type="submit" value="Send">
-                          <!-- <button class="btn primary mt-3" type="submit">Send a Message</button> -->
+                        <button class="btn primary mt-3" type="submit">Send a Message</button> 
                       </form>
 
                   </div>
@@ -82,7 +82,7 @@
           </div>
       </div>
       
-  </div>
+  </div> -->
 
 </template>
 
@@ -125,19 +125,23 @@ h1{
   color:var(--main-color);
 }
 
-.primary{
+.blank-space-2{
+    height: 50px;
+}
+
+/* .primary{
 color:var(--white-base);
 background: var(--accent-color);
 border-radius: 20px;
-}
+} */
 
 .dawn{
   color:var(--secondary-color);
   font-family: Lust-sans, sans-serif;
   font-weight: 100;
 }
-.elem2{
+/* .elem2{
   float:right;
-}
+} */
 
 </style>
