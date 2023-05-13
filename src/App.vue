@@ -9,9 +9,11 @@ import { RouterLink, RouterView } from 'vue-router';
   <div class="container">
     <nav class="nav">
       <li>
-        
+        <RouterLink to="/" ><img src="../src/assets/img/logo_1.png" alt="logo" class="logo nav-link"></RouterLink>
       </li>
-      <RouterLink to="/" ><img src="../src/assets/img/logo_1.png" alt="logo" class="logo"></RouterLink>
+      <li>
+        <RouterLink class="nav-link" to ="/horoscope">Daily horoscope</RouterLink>
+      </li>
     </nav>
   </div>
 
