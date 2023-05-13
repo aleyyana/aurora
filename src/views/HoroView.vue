@@ -6,6 +6,12 @@
       </div>
       <div class="blank-space2"></div>
   </div>
+
+  <div class="container">
+
+    <h6>Libra</h6>
+    
+  </div>
   <!-- <div id="app" class="container">
       <div class="carousel" id="carousel">
             <div class="row">
