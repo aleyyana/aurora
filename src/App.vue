@@ -6,14 +6,27 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
 
-  <div class="container">
-    <nav class="nav">
-      <li>
-        
-      </li>
-      <RouterLink to="/" ><img src="../src/assets/img/logo_1.png" alt="logo" class="logo"></RouterLink>
-    </nav>
-  </div>
+<div class="container">
+  <nav class="navbar navbar-expand-lg">
+    <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo navbar-brand"></RouterLink>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <RouterLink class="nav-link"  to="/">Home</RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink class="nav-link" to ="/horoscope">Daily horoscope</RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink class="nav-link" to="/about">About</RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink class="nav-link" to="/about">About</RouterLink>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
 
 <!-- <div class="container-fluid">
   <nav class="nav navbar justify-content-center">
