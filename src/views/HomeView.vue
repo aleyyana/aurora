@@ -2,47 +2,9 @@
 
 </script>
 <template>
-
-  <div id="grid">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-3 col-md-offset-1 col-md-2">
-          <div class="grid-line"></div>
-        </div>
-        <div class="col-xs-3 col-md-2">
-          <div class="grid-line"></div>
-        </div>
-        <div class="col-xs-3 col-md-2">
-          <div class="grid-line"></div>
-        </div>
-        <div class="col-xs-3 col-md-2">
-          <div class="grid-line"></div>
-        </div>
-        <div class="col-xs-3 col-md-2">
-          <div class="grid-line"></div>
-        </div>
-        <div class="col-xs-3 col-md-2">
-          <div class="grid-line"></div>
-        </div>
-      </div>
-    </div>
+  <div class="container">
+    <h1>{{ title }}</h1>
   </div>
-
-<!-- <div id="app" class="container">
-
-  <div class="kine position-absolute top-50 start-50">
-      <kinesis-container class="">
-      <h1>Aurora</h1> 
-        <kinesis-element :strength="10"> <h1>Let's</h1></kinesis-element>
-        <kinesis-element :strength="20"> <h1>Stargaze</h1> </kinesis-element>
-      </kinesis-container>
-    </div>
- 
-</div> -->
-
-  <!-- <div class="blank-space"></div>
-
-   <h1 class="main_title">{{title}}</h1> --> -->
 </template>
 
 <style scoped>

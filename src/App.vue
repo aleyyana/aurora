@@ -93,10 +93,11 @@ header {
 </style>
 
 <script>
+
 import footerSite from '@/components/footerSite.vue'
     export default {
         components:{
-            footerSite
+            footerSite,
         }
     }
 
