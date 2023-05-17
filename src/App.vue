@@ -9,7 +9,7 @@ import { RouterLink, RouterView } from 'vue-router';
 <div class="container-fluid">
   <nav class="navbar navbar-expand-xl">
     <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo navbar-brand"></RouterLink>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <div class="" id="n">
       <ul class="navbar-nav">
         <li class="nav-item active menu-links">
           <RouterLink class="nav-link"  to="/">Home</RouterLink>
@@ -17,9 +17,6 @@ import { RouterLink, RouterView } from 'vue-router';
         <li class="nav-item menu-links">
           <RouterLink class="nav-link" to ="/horoscope">Daily horoscope</RouterLink>
         </li>
-        <!-- <li class="nav-item">
-         <RouterLink class="nav-link" to="/about">About</RouterLink>
-        </li> -->
         <li class="nav-item menu-links">
           <RouterLink class="nav-link" to="/about">About</RouterLink>
         </li>
