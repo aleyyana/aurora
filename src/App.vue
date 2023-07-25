@@ -1,30 +1,28 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
-
-
 </script>
 
 <template>
-
-<div class="container-fluid">
-  <nav class="navbar navbar-expand-xl">
-    <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo navbar-brand"></RouterLink>
-    <div class="" id="n">
-      <ul class="navbar-nav">
-        <li class="nav-item active menu-links">
-          <RouterLink class="nav-link"  to="/">Home</RouterLink>
-        </li>
-        <li class="nav-item menu-links">
-          <RouterLink class="nav-link" to ="/horoscope">Daily horoscope</RouterLink>
-        </li>
-        <li class="nav-item menu-links">
-          <RouterLink class="nav-link" to="/about">About</RouterLink>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl justify-content-center align-item-flex">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <RouterLink class="nav-link active pr-5" to="/">Home</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link pr-5" to="/horoscope">Daily horoscope</RouterLink>
+          </li>
+            <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo navbar-brand"></RouterLink>
+          <li class="nav-item">
+            <RouterLink class="nav-link pr-5" to="/love">Love Compatibility</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link pr-5" to="/about">About</RouterLink>
+          </li>
+        </ul>
+    </nav>
+  </div>
+  
 <hr>
   <RouterView />
   <div class="blank-space"></div>
@@ -35,62 +33,27 @@ import { RouterLink, RouterView } from 'vue-router';
 
 @import url("https://use.typekit.net/vht2gko.css");
 
-*{
-  background-image: url(../src/assets/img/jose-duarte-ma48HHDJCXw-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+
+
+.navbar-brand{
+width: 45px;
+height: 45px;
 }
 
-p, a, input, h1, label{
-  color:var(--white-base);
-}
-
-p, input{
-  font-size: var(--content-size);
-  font-family: Quasimoda, sans-serif;
-}
-
-a, h3, h4{
-  font-size:var(--undertitle-size);
-}
-
-h1, h2, h3, h4, h5{
-  color:var(--white-base);
+.nav-link{
   font-family: Lust-sans, sans-serif;
+  color: var(--white);
+  font-size: 25px;
+
 }
 
-
-
-h2{
-  font-size: var(--title-size);
-} 
-
-.logo{
-  display: block;
-  margin: 0 auto 2rem;
-  width:3vw;
-}
-
-.menu-links{
-  font-family: Lust-sans, sans-serif;
-}
-
-
-.blank-space{
-    height: 200px;
-}
-
-.primary{
-  color:var(--white-base);
-  background: var(--accent-color);
-  border-radius: 20px;
-}
 
 </style>
 
 <script>
 
 import footerSite from '@/components/footerSite.vue'
+
     export default {
         components:{
             footerSite,
