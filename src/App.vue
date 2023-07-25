@@ -6,25 +6,24 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
 
-  <div class="container">
-    <nav class="nav">
-      <li class="nav-item menu-links">
-        <RouterLink to="/" ><img src="../src/assets/img/logo_1.png" alt="logo" class="logo nav-link"></RouterLink>
-      </li>
-      <li class="nav-item menu-links">
-            <RouterLink class="nav-link"  to="/">Home</RouterLink>
-          </li>
-      <li class="nav-item menu-links">
-        <RouterLink class="nav-link" to ="/horoscope">Daily horoscope</RouterLink>
-      </li>
-      <li class="nav-item menu-links">
-        <RouterLink class="nav-link" to="/love">Compatibility</RouterLink>
-      </li>
-      <li class="nav-item menu-links">
-        <RouterLink class="nav-link" to="/about">About</RouterLink>
-      </li>
-    </nav>
-  </div>
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-xl">
+    <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo navbar-brand"></RouterLink>
+    <div class="" id="n">
+      <ul class="navbar-nav">
+        <li class="nav-item active menu-links">
+          <RouterLink class="nav-link"  to="/">Home</RouterLink>
+        </li>
+        <li class="nav-item menu-links">
+          <RouterLink class="nav-link" to ="/horoscope">Daily horoscope</RouterLink>
+        </li>
+        <li class="nav-item menu-links">
+          <RouterLink class="nav-link" to="/about">About</RouterLink>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
 
 <hr>
   <RouterView />
@@ -87,10 +86,11 @@ h2{
 </style>
 
 <script>
+
 import footerSite from '@/components/footerSite.vue'
     export default {
         components:{
-            footerSite
+            footerSite,
         }
     }
 
