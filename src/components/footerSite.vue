@@ -1,5 +1,7 @@
 <template>
+  <br>
     <hr>
+    <br>
    <div class="container">
     <nav class="nav">
       <li class="nav-item menu-links">

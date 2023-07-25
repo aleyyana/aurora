@@ -23,7 +23,7 @@ import { RouterLink, RouterView } from 'vue-router';
     </nav>
   </div>
   
-<hr>
+<hr class="hr">
   <RouterView />
   <div class="blank-space"></div>
   <footerSite/>
@@ -41,11 +41,12 @@ height: 45px;
 }
 
 .nav-link{
-  font-family: Lust-sans, sans-serif;
+  font-family: Quasimoda, sans-serif;
   color: var(--white);
-  font-size: 25px;
+  font-size: 20px;
 
 }
+
 
 
 </style>
