@@ -35,6 +35,12 @@ import { RouterLink, RouterView } from 'vue-router';
 
 @import url("https://use.typekit.net/vht2gko.css");
 
+*{
+  background-image: url(../src/assets/img/jose-duarte-ma48HHDJCXw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 p, a, input, h1, label{
   color:var(--white-base);
 }
@@ -49,14 +55,11 @@ a, h3, h4{
 }
 
 h1, h2, h3, h4, h5{
-  color:var(--main-color);
+  color:var(--white-base);
   font-family: Lust-sans, sans-serif;
-  font-weight: 300;
 }
 
-h1{
-  font-size:(var(--header-title));
-}
+
 
 h2{
   font-size: var(--title-size);

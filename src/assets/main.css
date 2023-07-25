@@ -4,14 +4,9 @@
 
 *{
   background-color: var(--black-bacgkround);
-<<<<<<< HEAD
   box-sizing: border-box;
   padding: 0;
   margin:0;
-=======
-  margin:0;
-  padding:0 ;
->>>>>>> b0957938afe5155804bc372fd1ad08f7964e4b57
 }
 
 
