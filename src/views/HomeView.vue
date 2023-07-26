@@ -6,7 +6,7 @@
       <div class="main-title">
         <h1> {{ title }}</h1>
       </div>
-      <div class="center" width="20px">  
+      <div class="center">  
           <img class="main-image" src="../assets/img/circle.png" alt="">
       </div>
 
@@ -32,7 +32,7 @@ h1{
 .center{
   display: flex;
   justify-content: center;
-  size: 50px;
+  size: 25px;
 }
 
 .btn-center{
@@ -41,12 +41,12 @@ h1{
 }
 
 .btn{
-  width: 280px;
+  width: 250px;
   height: 50px;
   background: #A1C084 0% 0% no-repeat padding-box;
   border-radius: 43px;
-  opacity: 1; 
 }
+
 </style>
 
 <script>  

@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
+
     <div class="container-fluid">
     <nav class="navbar navbar-expand-xl justify-content-center align-item-flex">
         <ul class="nav navbar-nav">
@@ -46,8 +47,6 @@ height: 45px;
   font-size: 20px;
 
 }
-
-
 
 </style>
 
