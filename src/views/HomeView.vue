@@ -32,7 +32,7 @@ h1{
 .center{
   display: flex;
   justify-content: center;
-  size: 25px;
+  height: 480px;
 }
 
 .btn-center{
