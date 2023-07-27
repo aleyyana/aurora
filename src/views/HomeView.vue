@@ -5,17 +5,24 @@
   <div class="container-fluid">
       <div class="main-title">
         <h1> {{ title }}</h1>
-      </div>
-      <div class="center">  
-          <img class="main-image" src="../assets/img/circle.png" alt="">
+        <h4 class="quote">Astrology is like gravity. You don't have to believe in it for it to be working in your life.
+          <br>
+          <span class="author">ZOLAR</span>
+        </h4>
       </div>
 
+      <div class="blank-space1"></div>
+
       <div class="row">
-        <div class="col btn-center">
-          <RouterLink class="btn" to="/horoscope">Go to your daily horoscope</RouterLink>
+        <div class="col btn-center m-auto">
+          <p class="pr-2">Let's go to your daily horoscope</p>  
+          <RouterLink class="btn" to="/horoscope">Check it out ! </RouterLink>
         </div>
-        <div class="col btn-center">
-          <RouterLink class="btn" to="/horoscope">Check compatibility with others</RouterLink>
+        <div class="col center-circle">
+          <img class="main-image" src="../assets/img/circle.png" alt="">
+        </div>
+        <div class="col btn-center m-auto">
+          <RouterLink class="btn" to="/horoscope"></RouterLink>
         </div>
       </div>
   </div>
@@ -29,11 +36,22 @@ h1{
   font-size: var(--header-size);
 }
 
-.center{
+.center-circle{
   display: flex;
   justify-content: center;
-  height: 480px;
+  height: 500px;
 }
+
+.quote{
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.text1{
+  color:var(--main-color);
+}
+
 
 .btn-center{
   display: flex;
@@ -41,10 +59,9 @@ h1{
 }
 
 .btn{
-  width: 250px;
-  height: 50px;
-  background: #A1C084 0% 0% no-repeat padding-box;
+  background: var(--secondary-color) 0% 0% no-repeat padding-box;
   border-radius: 43px;
+  height:38px;
 }
 
 </style>

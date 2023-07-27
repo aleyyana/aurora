@@ -34,7 +34,9 @@ import { RouterLink, RouterView } from 'vue-router';
 
 @import url("https://use.typekit.net/vht2gko.css");
 
-
+.blank-space1{
+  height:100px;
+}
 
 .navbar-brand{
 width: 45px;
