@@ -34,8 +34,16 @@ import { RouterLink, RouterView } from 'vue-router';
 
 @import url("https://use.typekit.net/vht2gko.css");
 
+html{
+  scroll-behavior: smooth;
+}
+
 .blank-space1{
-  height:100px;
+  height:80px;
+}
+
+.blank-space2{
+  height:30px;
 }
 
 .navbar-brand{
