@@ -35,7 +35,7 @@ h1{
 .center-circle{
   display: flex;
   justify-content: center;
-  height: 500px;
+  height: 400px;
 }
 
 .center-content{
