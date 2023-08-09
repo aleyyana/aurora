@@ -5,7 +5,9 @@
       <div class="col">
         <p></p>
       </div>
-      <div class="col"></div>
+      <div class="col">
+        <img src="" alt="">
+      </div>
       <div class="col"></div>
     </div>
   </div>
