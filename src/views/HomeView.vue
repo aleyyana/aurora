@@ -21,6 +21,8 @@
       <div class="center-content" id="anchor1"><a href="#anchor-content">Jump to section 2</a></div>
   </div>
   <div class="blank-space2"></div>
+
+
   
 </template>
 
@@ -30,6 +32,7 @@ h1{
   font-family: Lust-sans, sans-serif;
   text-align: center;
   font-size: var(--header-size);
+  color:var(--white)
 }
 
 .center-circle{
@@ -46,6 +49,7 @@ h1{
 .quote{
   text-align: center;
   font-size: 20px;
+  color:var(--white);
 
 }
 
