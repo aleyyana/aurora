@@ -38,12 +38,20 @@ html{
   scroll-behavior: smooth;
 }
 
+h3,p,h1{
+  color: var(--white);
+}
+
 .blank-space1{
   height:80px;
 }
 
 .blank-space2{
   height:30px;
+}
+
+.blank-space3{
+  height:10px;
 }
 
 .navbar-brand{
