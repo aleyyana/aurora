@@ -17,19 +17,19 @@
 
       <div class="blank-space3"></div>
 
-      <div class="center-content" id="anchor1"><a href="#anchor-content">Jump to section 2</a>
-      </div>
-  </div>
-  <div class="blank-space1"></div>
-
-  <div id="anchor-content">
-    <div class="row">
+      <div class="row">
       <div class="col">
         <p>Do you want to know your daily horoscope ? You can check it out here !</p>
       </div>
-      <div class="col"></div>
+      <div class="col">
+        <p class="compat_text">test your Compatibility with friends & lovers here !</p>
+      </div>
     </div>
+
+      <!-- <div class="center-content" id="anchor1"><a href="#anchor-content">Jump to section 2</a>
+      </div> -->
   </div>
+
 
 
   
@@ -50,11 +50,6 @@ h1{
   height: 400px;
 }
 
-.center-content{
-  display: flex;
-  justify-content: center;
-}
-
 .quote{
   text-align: center;
   font-size: 20px;
@@ -62,20 +57,8 @@ h1{
 
 }
 
-.text1{
-  color:var(--main-color);
-}
-
-
-.btn-center{
-  display: flex;
-  justify-content: center;
-}
-
-.btn{
-  background: var(--secondary-color) 0% 0% no-repeat padding-box;
-  border-radius: 43px;
-  height:38px;
+.compat_text{
+  text-align: end;
 }
 
 </style>
