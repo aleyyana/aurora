@@ -5,7 +5,7 @@
     <div class="main-title">
       <h1>{{ title }}</h1>
     </div>
-    <div class="container video">
+    <div class="container-fluid  video">
       <video height="500" ref="videoPlayer">
           <source
             src="../assets/video/aurora_astro.mp4"
