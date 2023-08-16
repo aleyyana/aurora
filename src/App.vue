@@ -14,10 +14,12 @@ import { RouterLink, RouterView } from 'vue-router';
         </button>
           <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
               <div class="offcanvas-header">
-
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-                <ul class="nav navbar-nav">
-              
+              <div class="offcanvas-body">
+                  <ul class="nav navbar-nav">
+                
                 <li class="nav-item">
                   <RouterLink class="nav-link active pr-5" to="/">Home</RouterLink>
                 </li>
@@ -31,6 +33,7 @@ import { RouterLink, RouterView } from 'vue-router';
                   <RouterLink class="nav-link pr-5" to="/about">About</RouterLink>
                 </li>
                 </ul>
+              </div>
            </div>
       </div>
     </nav>
