@@ -1,6 +1,8 @@
 <template>
 
 <carousel :items-to-show="1.5">
+
+  <img src="../assets/img/aquarius.png" alt="">
     <slide v-for="slide in 10" :key="slide">
       {{ slide }}
     </slide>

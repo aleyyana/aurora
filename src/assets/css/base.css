@@ -4,10 +4,11 @@
   --black-bacgkround:#000;
   --secondary-color:#767FB0;
   --accent-color:#A1C084;
-  --header-size: 70px;
-  --title-size:50px;
-  --undertitle-size:25px;
-  --content-size:16px;
+  --header-size: 5vw;
+  --title-size:2vw;
+  --quote-size:2vw;
+  --undertitle-size: 1vw;
+  --content-size:1vw;
 }
 
 

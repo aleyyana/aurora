@@ -6,10 +6,9 @@
       <div class="main-title">
         <h1> {{ title }}</h1>
         <div class="blank-space3"></div>
-        <h4 class="quote">Astrology is like gravity. You don't have to believe in it for it to be working in your life.
+        <h3 class="quote">Look to the moon and stars to find the answers that lie within you
           <br>
-          <span class="author">ZOLAR</span>
-        </h4>
+        </h3>
       </div>
       <div class="center-circle"> 
         <img class="main-image" src="../assets/img/circle.png" alt=""> 
@@ -19,15 +18,14 @@
 
       <div class="row">
       <div class="col">
-        <p>Do you want to know your daily horoscope ? You can check it out here !</p>
+        <p>Do you want to know your daily horoscope ?</p>
+        <button></button>
       </div>
       <div class="col">
         <p class="compat_text">test your Compatibility with friends & lovers here !</p>
+        <button></button>
       </div>
     </div>
-
-      <!-- <div class="center-content" id="anchor1"><a href="#anchor-content">Jump to section 2</a>
-      </div> -->
   </div>
 
 
@@ -52,8 +50,9 @@ h1{
 
 .quote{
   text-align: center;
-  font-size: 20px;
+  font-size: var(--quote-size);
   color:var(--white);
+  font-family: Quasimoda, sans-serif;
 
 }
 
