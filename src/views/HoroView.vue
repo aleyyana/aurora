@@ -18,9 +18,6 @@
     import AquariusSign from '../components/AquariusSign.vue';   
     import PiscesSign from '../components/PiscesSign.vue';   
     import AriesSign from '../components/AriesSign.vue';
-    import AquariusSign from '../components/AquariusSign.vue';   
-    import PiscesSign from '../components/PiscesSign.vue';   
-    import AriesSign from '../components/AriesSign.vue';
     import TaurusSign from '../components/TaurusSign.vue';
     import GeminiSign from '../components/GeminiSign.vue';   
     import CancerSign from '../components/CancerSign.vue';

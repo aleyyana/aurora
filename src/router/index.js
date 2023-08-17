@@ -15,9 +15,9 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/horoscope',
-      name: 'horoscope',
-      component: () => import('../views/HoroView.vue')
+      path:'/horoscope',
+      name:'/horoscope',
+      component:()=> import('../views/HoroView.vue')
     }
   ]
 })
