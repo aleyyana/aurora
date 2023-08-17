@@ -21,7 +21,7 @@ const router = createRouter({
     },
     {
       path: '/love',
-      name: 'love',
+      name: 'compatibility',
       component: () => import('../views/LoveView.vue')
     }
   ]

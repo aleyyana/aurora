@@ -45,8 +45,12 @@ h1{
 .center-circle{
   display: flex;
   justify-content: center;
-  height: 400px;
+  height:auto;
   max-width: 100%;
+}
+
+.main-image{
+  height: 400px;
 }
 
 .quote{

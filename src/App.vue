@@ -46,7 +46,7 @@ import { RouterLink, RouterView } from 'vue-router';
       <div class="navbar-nav mr-auto">
             <RouterLink class="nav-item nav-link" to="/">Home</RouterLink>
             <RouterLink class="nav-item nav-link" to="/horoscope">Daily horoscope</RouterLink>
-            <RouterLink class="nav-item nav-link" to="/love">Love Compatibility</RouterLink>
+            <RouterLink class="nav-item nav-link" to="/love">Compatibility</RouterLink>
             <RouterLink class="nav-item nav-link" to="/about">About</RouterLink>
       </div>
     </div>

@@ -1,32 +1,21 @@
 <template>
+  <carousel-3d>
+    <slide index="0">
 
-<carousel :items-to-show="1.5">
-
-  <img src="../assets/img/aquarius.png" alt="">
-    <slide v-for="slide in 10" :key="slide">
-      {{ slide }}
     </slide>
 
-    <template #addons>
-      <navigation />
-      <pagination />
-    </template>
-  </carousel>
+  </carousel-3d>
 
 </template>
   <script>
-  import 'vue3-carousel/dist/carousel.css';
-  import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
-  import AquariusSign from '../components/AquariusSign.vue';   
+    import {Carousel3d, Slide} from 'vue-carousel-3d'
+
 
     export default({
       name: 'app',
-      components: {
-        Carousel,
-        Slide,
-        Pagination,
-        Navigation,
-        AquariusSign,
+      components: { 
+        Carousel3d,
+        Slide
       }
 
     })
