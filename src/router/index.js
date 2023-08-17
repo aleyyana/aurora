@@ -18,11 +18,6 @@ const router = createRouter({
       path: '/horoscope',
       name: 'horoscope',
       component: () => import('../views/HoroView.vue')
-    },
-    {
-      path: '/love',
-      name: 'compatibility',
-      component: () => import('../views/LoveView.vue')
     }
   ]
 })

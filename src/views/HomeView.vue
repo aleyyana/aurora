@@ -22,7 +22,7 @@
         <button></button>
       </div>
       <div class="col">
-        <p class="compat_text">test your Compatibility with friends & lovers here !</p>
+        <p class="compat_text">Have more information about Aurora & Astrology</p>
         <button></button>
       </div>
     </div>

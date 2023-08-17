@@ -59,7 +59,6 @@ export default{
   methods:{
     play() {
       this.$refs.videoPlayer.play();
-      this.$refs.videoPlayer.autoplay();
     },
     pause() {
       this.$refs.videoPlayer.pause();
@@ -90,7 +89,7 @@ export default{
 }
 
 .responsive_video{
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 

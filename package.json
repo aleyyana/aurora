@@ -9,14 +9,15 @@
   },
   "dependencies": {
     "bootstrap-vue": "^2.23.1",
+    "hooper": "^0.3.4",
     "vue": "^3.2.45",
     "vue-axios": "^3.5.2",
-    "vue-carousel-3d": "^1.0.1",
     "vue-glitched-writer": "^1.2.2",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
-    "vite": "^4.0.0"
+    "vite": "^4.0.0",
+    "vue-carousel-3d": "^1.0.1"
   }
 }
