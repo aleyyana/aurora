@@ -15,14 +15,43 @@
 
 <script>
 
+    import AquariusSign from '../components/AquariusSign.vue';   
+    import PiscesSign from '../components/PiscesSign.vue';   
+    import AriesSign from '../components/AriesSign.vue';
+    import AquariusSign from '../components/AquariusSign.vue';   
+    import PiscesSign from '../components/PiscesSign.vue';   
+    import AriesSign from '../components/AriesSign.vue';
+    import TaurusSign from '../components/TaurusSign.vue';
+    import GeminiSign from '../components/GeminiSign.vue';   
+    import CancerSign from '../components/CancerSign.vue';
+    import LeoSign from '../components/LeoSign.vue';   
+    import VirgoSign from '../components/VirgoSign.vue';
+    import LibraSign from '../components/LibraSign.vue';   
+    import ScorpioSign from '../components/ScorpioSign.vue';
+    import SagittariusSign from '../components/SagittariusSign.vue';   
+    import CapricornSign from '../components/CapricornSign.vue';
+
 
 export default {
 
     data(){
+        
 
     },
 
     components: {
+    AquariusSign,
+    PiscesSign,
+    AriesSign,
+    TaurusSign,
+    GeminiSign,
+    CancerSign, 
+    LeoSign,
+    VirgoSign,
+    LibraSign,
+    ScorpioSign,
+    SagittariusSign,
+    CapricornSign,
 
   },
 
@@ -36,7 +65,7 @@ export default {
     if (birthmonth == 1&& birthday >= 20 || birthmonth == 2 && birthday <= 18
     ){
         result = ("Aquarius");
-     document.getElementById("photo").innerHTML="<img src='../assets/img/hands_aquarius'";
+     document.getElementById("photo").innerHTML="<img src='../assets/img/hands_aquarius.png'width=20%>";
    document.getElementById("characteristic").innerHTML="Aquarians are extremely vulnerable and sensitive. Although you may often find them being surrounded by many friends but in reality they rarely have close friends and acquaintances. Aquarius is a universal sign which makes them public people. Hence Aquarians are often associated with clubs, organizations and forums and enthusiastically participate in intellectual discussions. Aquarians are great communicators as long as they are within their mental realm.";
   
     }
@@ -110,7 +139,7 @@ export default {
        alert("Please enter an accurate date ! ");
     }
  document.getElementById("output").innerHTML= result;
-}
+    },
   }
 };
 
