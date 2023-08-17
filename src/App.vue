@@ -3,9 +3,7 @@ import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
-
-<div class="container">
-    <nav class="navbar navbar-expand-lg  justify-content-center align-item-flex">
+    <!-- <nav class="navbar">
       <div class="container-fluid">
 
         <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo navbar-brand"></RouterLink>
@@ -36,9 +34,25 @@ import { RouterLink, RouterView } from 'vue-router';
               </div>
            </div>
       </div>
-    </nav>
-  </div> -->
-  
+    </nav> -->
+<div id="nav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <RouterLink to="/"><img src="../src/assets/img/logo_1.png" alt="logo" class="logo navbar-brand"></RouterLink>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+            <RouterLink class="nav-item nav-link" to="/">Home</RouterLink>
+            <RouterLink class="nav-item nav-link" to="/horoscope">Daily horoscope</RouterLink>
+            <RouterLink class="nav-item nav-link" to="/love">Love Compatibility</RouterLink>
+            <RouterLink class="nav-item nav-link" to="/about">About</RouterLink>
+      </div>
+    </div>
+  </nav> 
+</div>
+   
 <hr class="hr">
   <RouterView />
   <div class="blank-space"></div>

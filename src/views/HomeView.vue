@@ -46,6 +46,7 @@ h1{
   display: flex;
   justify-content: center;
   height: 400px;
+  max-width: 100%;
 }
 
 .quote{
