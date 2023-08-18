@@ -1,6 +1,6 @@
 <template>
  <div class="container text-center" id="aztro">
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-12">
             <h3>{{ message }}</h3>
         </div>
@@ -23,7 +23,7 @@
         <div class="col-12">
             <li> <span>Description: </span> {{data.description}}</li>
         </div>
-     </div>
+     </div> -->
 </div>
 </template>
 
@@ -31,25 +31,58 @@
 
 import axios from 'axios'
 
-const URL = 'https://aztro.sameerkumar.website/?sign=aquarius&day=today';
-export default {
-  name: "Aqua",
-  data() {
-    return {
-      message: "Your daily Aquarius",
-      data: {},
-    };
+const options = {
+  method: 'GET',
+  url: 'https://daily-horoscope-api.p.rapidapi.com/api/Daily-Horoscope-English/',
+  params: {
+    zodiacSign: 'aquarius',
+    timePeriod: 'daily'
   },
-  created() {
-        axios.post(URL).then((response) => {
-            this.data = response.data
-        })
-    },
-
-    props: {
-    msg: String,
-  },
+  headers: {
+    'X-RapidAPI-Key': '62bc3eb8bdmshe8948ea88763b55p1cf83ajsna599aeb1fcc4',
+    'X-RapidAPI-Host': 'daily-horoscope-api.p.rapidapi.com'
+  }
 };
+
+// export default({
+
+//     try {
+// 	const response = await axios.request(options);
+// 	console.log(response.data);
+//     } catch (error) {
+// 	console.error(error);
+// }
+// })
+
+
+export default {
+mounted () {
+console.log ('Component mounted.')
+},
+data() {
+return {
+name: '',
+description: '',
+result: ''
+};
+},
+methods: {
+formSubmit(e1) {
+e1.preventDefault();
+let currentObj = this;
+this.axios.post('http://localhost:8000/yourPostApi', {
+name: this.name,
+description: this.description
+})
+.then(function (response) {
+currentObj.output = response.data;
+})
+.catch(function (error) {
+currentObj.output = error;
+});
+}
+}
+}
 </script>
 
 <style>
