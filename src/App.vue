@@ -23,8 +23,10 @@ import { RouterLink, RouterView } from 'vue-router';
       
     <hr class="hr">
 <RouterView /> 
-      <!-- <div class="blank-space"></div>
-      <footerSite/> --> -->
+
+
+      <div class="blank-space"></div>
+      <footerSite/> -->
 
 </template>
 

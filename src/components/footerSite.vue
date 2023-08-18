@@ -1,27 +1,24 @@
 <template>
-  <br>
-    <hr>
-    <br>
+<hr>
    <div class="container">
-    <nav class="nav">
-      <li class="nav-item menu-links">
-        <RouterLink to="/" ><img src="../assets/img/logo_2.png" alt="logo" class="img"></RouterLink>
-      </li>
-      <li class="nav-item menu-links">
-            <RouterLink class="nav-link footer-links"  to="/">Home</RouterLink>
-          </li>
-      <li class="nav-item menu-links">
-        <RouterLink class="nav-link footer-links" to ="/horoscope">Daily horoscope</RouterLink>
-      </li>
-      <li class="nav-item menu-links">
-        <RouterLink class="nav-link footer-links" to="/love">Compatibility</RouterLink>
-      </li>
-      <li class="nav-item menu-links">
-        <RouterLink class="nav-link footer-links" to="/about">About</RouterLink>
-      </li>
-    </nav>
-    <h5 class="text-center"> © Anne-Sophie El Sayyed</h5>
-   </div>
+  <div class="content"></div>
+  <footer class="row footer">
+
+    <div class="links col col-xs-12 col-sm-3 col-sm-pull-6">
+      <RouterLink class="footer-links nav"  to="/">Home</RouterLink>
+      <RouterLink class="footer-links nav" to="/horoscope">Your Horoscope</RouterLink>
+      <RouterLink class="footer-links nav" to="/love">Compatibility</RouterLink>
+    </div>
+        <div class="copyright col-xs-12 col-sm-3 col-sm-pull-6">
+      <p> &copy; Anne-Sophie El Sayyed </p>
+    </div><!-- Ende Copyright -->
+    
+    <div class="impressum col-xs-12 col-sm-3 col-sm-pull-6">
+      <RouterLink to="/" ><img src="../assets/img/logo_2.png" alt="logo" class="img"></RouterLink>
+      <p>Aurora</p>
+    </div><!-- Ende Impressum -->
+  </footer>
+</div>
 </template>
 
 <style scoped>
@@ -29,13 +26,23 @@ h5{
     font-family: Quasimoda, sans-serif;
 }
 
-.footer-links{
-    font-size: 18px;
-    color:var(--main-color);
-    font-family: Quasimoda, sans-serif;
-}
 img{
-    width:45px;
-    height:45px;
+height: 8vh;
 }
+
+.footer{
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links{
+  color:var(--white);
+}
+
+.copyright,  .impressum, .links
+{
+  text-align: center;
+  font-family: Quasimoda, sans-serif;
+}
+
 </style>
