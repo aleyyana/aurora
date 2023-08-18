@@ -42,6 +42,14 @@ h3,p,h1{
   color: var(--white);
 }
 
+h3{
+  color:var(--main-color);
+}
+
+p{
+  font-weight: lighter;
+}
+
 .blank-space1{
   height:80px;
 }
