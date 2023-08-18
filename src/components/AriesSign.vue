@@ -32,12 +32,12 @@
 import axios from 'axios'
 
 const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
-        export default {
-             el: '#aztro',
+
+export default({
+    el: '#aztro',
     data() {
             return {
-            message: "Your daily Aries",
-            data: {},
+            data: {}
         }
     },
     created() {
@@ -45,8 +45,7 @@ const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
             this.data = response.data
         })
     }
-        }
-
+})
 </script>
 
 <style>

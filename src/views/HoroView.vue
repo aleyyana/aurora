@@ -5,28 +5,206 @@
         <p>Month:<input type="number" id="month" min="1" max="12" ></p>
         <p> Day:<input type="number" id="day" min="1" max="31"></p> 
         <a id="animated" v-on:click="zodiac"  class="button">Find your zodiac sign! </a>
-        <p id="photo"></p>
         <p id= "space"> Your zodiac sign is <span id="output"></span> </p>  
         <p id="characteristic"></p>
     </div>
 
-    <div class="container">
-      
-    </div>
+    <div class="blank-space"></div>
 
+    <div class="container mb-3">
+      <div class="col-12 text-center">
+          <h1>The Daily horoscope</h1> 
+      </div>
+      <div class="blank-space2"></div>
+  </div>
+  <div id="app" class="container">
+      <div class="carousel" id="carousel">
+            <div class="row">
+                <div class="col text-center mb-2">
+                  <h6 class="">Aquarius</h6>
+                  <br>
+                  <img src="../assets/img/aquarius.png">
+                <br/>
+                  <button class="secondary px-4 py-2 mt-2"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
 
+                </div>
+                <div class="col text-center mb-3">
+                  <h6 class="">Pisces</h6>
+                  <br>
+                  <img src="../assets/img/pisces.png">
+                <br/>
+                  <button class="secondary px-4 py-2 mt-2"  @click="togglePisces" ref="PiscesbtnToggle" >{{button.text}}</button>
+                 </div>
+                <div class="col text-center mb-3">
+                  <h6 class="">Aries</h6>
+                  <br>
+                  <img src="../assets/img/aries.png">
+                <br/>
+                  <button class="secondary px-4 py-2 mt-2" px-4 py-2 m-1 @click="toggleAries" ref="AriesbtnToggle" >{{button.text}}</button>
+                </div>
+                <div class="col text-center mb-3">
+                  <h6 class="">Taurus</h6>
+                  <br>
+                  <img src="../assets/img/taurus.png">
+                <br/>
+                  <button class="secondary px-4 py-2 mt-2"  @click="toggleTaurus" ref="TaurusbtnToggle" >{{button.text}}</button>
+                </div>
+                <div class="col text-center mb-3">
+                  <h6 class="">Gemini</h6>
+                  <br>
+                  <img src="../assets/img/gemini.png">
+                <br/>
+                  <button class="secondary px-4 py-2 mt-2"  @click="toggleGemini" ref="GeminibtnToggle" >{{button.text}}</button>
+                </div>
+                <div class="col text-center mb-3">
+                  <h6 class="">Cancer</h6>
+                  <br>
+                  <img src="../assets/img/cancer.png">
+                <br/>
+                  <button class="secondary px-4 py-2 mt-2"  @click="toggleCancer" ref="CancerbtnToggle" >{{button.text}}</button>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col text-center mb-3">
+                  <h6 class="">Leo</h6>
+                  <br>
+                  <img src="../assets/img/leo.png">
+                <br/>
+                  <button class="secondary px-4 py-2 mt-2"  @click="toggleLeo" ref="LeobtnToggle">{{button.text}}</button>
+                </div>
+                <div class="col text-center mb-3">
+                  <h6 class="">Virgo</h6>
+                  <br>
+                  <img src="../assets/img/virgo.png">
+                <br/>
+                  <button class="secondary px-4 py-2 mt-2"  @click="toggleVirgo" ref="VirgobtnToggle">{{button.text}}</button>
+                </div>
+                <div class="col text-center mb-3">
+                  <h6 class="">Libra</h6>
+                  <br>
+                  <img class="pb-2" src="../assets/img/libra.png">
+                <br/>
+                  <button class="secondary px-4 py-2 mt-2"  @click="toggleLibra" ref="LibrabtnToggle">{{button.text}}</button>
+                </div>
+                <div class="col text-center mb-3">
+                  <h6 class="">Scorpio</h6>
+                  <br>
+                  <img src="../assets/img/scorpio.png">
+                <br/>
+                  <button class="secondary px-4 py-2 mt-2"  @click="toggleScorpio" ref="ScorpiobtnToggle">{{button.text}}</button>
+                </div>
+                <div class="col text-center mb-3">
+                  <h6 class="">Sagittarius</h6>
+                  <br>
+                  <img class="pb-2" src="../assets/img/sagittarius.png">
+                <br>
+                  <button class="secondary px-4 py-2 mt-2"  @click="toggleSagittarius" ref="SagitbtnToggle">{{button.text}}</button>
+                </div>
+                <div class="col text-center mb-3">
+                  <h6 class="">Capricorn</h6>
+                  <br>
+                  <img src="../assets/img/capricorn.png">
+                <br>
+                  <button class="secondary px-4 py-2 mt-2"  @click="toggleCapricorn" ref="CapribtnToggle">{{button.text}}</button>
+                </div>
+            </div>
+      </div>
+      <div class="col-12">
+        <transition name="fade">
+          <aquarius-sign
+              v-show="showAquarius"
+          />        
+        </transition>
+      </div>
+      <div class="col-12">
+        <transition name="fade">
+          <pisces-sign 
+              v-show="showPisces"
+          />
+        </transition>
+      </div>
+      <div class="col-12">
+        <transition name="fade">
+          <aries-sign
+              v-show="showAries"
+          />
+        </transition>
+      </div>
+      <div class="col-12">
+        <transition name ="fade">
+          <taurus-sign 
+              v-show="showTaurus"
+          />
+        </transition>
+      </div>
+      <div class="col-12">
+        <transition name="fade">
+          <gemini-sign
+              v-show="showGemini"
+          />
+      </transition>
+      </div>
+      <div class="col-12">
+        <transition name="fade">
+          <cancer-sign
+            v-show="showCancer" 
+            />
+        </transition>
+      </div>
+      <div class="col-12">
+        <transition name="fade">
+          <leo-sign
+            v-show="showLeo"
+          />
+        </transition>
+      </div>
+      <div class="col-12">
+        <transition name="fade">
+          <virgo-sign
+            v-show="showVirgo"
+          />
+          </transition>
+      </div>
+      <div class="col-12">
+        <transition name="fade">
+          <libra-sign
+            v-show="showLibra"
+          />
+          </transition>
+      </div>
+      <div class="col-12">
+        <transition name="fade">
+          <scorpio-sign
+            v-show="showScorpio"
+          />
+          </transition>
+      </div>
+      <div class="col-12">
+        <transition name="fade">
+          <sagittarius-sign
+            v-show="showSagittarius"
+          />
+          </transition>
+      </div>
+      <div class="col-12">
+        <transition name="fade">
+          <capricorn-sign
+            v-show="showCapricorn"
+          />
+          </transition>
+      </div>
+
+  </div>    
 </template>
 
 <script>
 
-    import AquariusSign from '../components/AquariusSign.vue';   
+import AquariusSign from '../components/AquariusSign.vue';   
     import PiscesSign from '../components/PiscesSign.vue';   
-    import AriesSign from '../components/AriesSign.vue';
     import TaurusSign from '../components/TaurusSign.vue';
     import GeminiSign from '../components/GeminiSign.vue';   
     import CancerSign from '../components/CancerSign.vue';
     import LeoSign from '../components/LeoSign.vue';   
-    import VirgoSign from '../components/VirgoSign.vue';
     import LibraSign from '../components/LibraSign.vue';   
     import ScorpioSign from '../components/ScorpioSign.vue';
     import SagittariusSign from '../components/SagittariusSign.vue';   
@@ -36,19 +214,35 @@
 export default {
 
     data(){
-        
 
+      return{
+        button:{
+          text: 'Check it for today !'
+        },
+        showAquarius: false,
+        showPisces: false,
+        showAries: false,
+        showTaurus: false,
+        showGemini: false,
+        showCancer: false,
+        showLeo:false,
+        showVirgo:false,
+        showLibra:false,
+        showScorpio:false,
+        showSagittarius:false,
+        showCapricorn:false,
+      }
     },
 
     components: {
     AquariusSign,
     PiscesSign,
-    AriesSign,
+    // AriesSign,
     TaurusSign,
     GeminiSign,
     CancerSign, 
     LeoSign,
-    VirgoSign,
+    // VirgoSign,
     LibraSign,
     ScorpioSign,
     SagittariusSign,
@@ -141,12 +335,76 @@ export default {
     }
  document.getElementById("output").innerHTML= result;
     },
+    toggleAquarius () {
+        this.showAquarius = !this.showAquarius;
+        this.$refs.AquabtnToggle.innerText = this.showAquarius?'Hide it':'Check it for today !';
+      },
+      togglePisces () {
+        this.showPisces = !this.showPisces;
+        this.$refs.PiscesbtnToggle.innerText = this.showPisces?'Hide it':'Check it for today !';
+      },
+      toggleAries () {
+        this.showAries = !this.showAries;
+        this.$refs.AriesbtnToggle.innerText = this.showAries?'Hide it':'Check it for today !';
+      },
+      toggleTaurus () {
+        this.showTaurus = !this.showTaurus;
+        this.$refs.TaurusbtnToggle.innerText = this.showTaurus?'Hide it':'Check it for today !';
+      },
+      toggleGemini () {
+        this.showGemini = !this.showGemini;
+        this.$refs.GeminibtnToggle.innerText = this.showGemini?'Hide it':'Check it for today !';
+      },
+      toggleCancer () {
+        this.showCancer = !this.showCancer;
+        this.$refs.CancerbtnToggle.innerText = this.showCancer?'Hide it':'Check it for today !';
+      },
+      toggleLeo () {
+        this.showLeo = !this.showLeo;
+        this.$refs.LeobtnToggle.innerText = this.showLeo?'Hide it':'Check it for today !';
+      },
+      toggleVirgo () {
+        this.showVirgo = !this.showVirgo;
+        this.$refs.VirgobtnToggle.innerText = this.showVirgo?'Hide it':'Check it for today !';
+      },
+      toggleLibra () {
+        this.showLibra = !this.showLibra;
+        this.$refs.LibrabtnToggle.innerText = this.showLibra?'Hide it':'Check it for today !';
+      },
+      toggleScorpio () {
+        this.showScorpio = !this.showScorpio;
+        this.$refs.ScorpiotnToggle.innerText = this.showScorpio?'Hide it':'Check it for today !';
+      },
+      toggleSagittarius () {
+        this.showSagittarius = !this.showSagittarius;
+        this.$refs.SagitbtnToggle.innerText = this.showSagittarius?'Hide it':'Check it for today !';
+
+      },
+      toggleCapricorn () {
+        this.showCapricorn = !this.showCapricorn;
+        this.$refs.CapribtnToggle.innerText = this.showCapricorn?'Hide':'Check it for today !';        
+      },
+  
   }
 };
 
 
 </script>
 
-<style>
+<style scoped>
+
+
+.secondary{
+        border-radius: 20px;
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+        font-family: Quasimoda, sans-serif;
+      }
+  
+    h6{
+      font-style: italic;
+      color: var(--secondary-color)
+      
+    }
 
 </style>
