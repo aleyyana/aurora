@@ -93,22 +93,6 @@ export default{
   height: auto;
 }
 
-h1{
-  font-family: Lust-sans, sans-serif;
-  text-align: center;
-  font-size: var(--header-size);
-  color:var(--white);
-}
-h3{
-  font-family: Lust-sans, sans-serif;
-  text-align: center;
-  font-size: var(--title-size);
-}
-
-p{
-  font-family: Quasimoda, sans-serif;
-  font-size: var(--content-size);
-}
 
 .controls{
   color:var(--white);

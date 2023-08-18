@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <div class="container-fluid">
+  <div class="container">
       <div class="main-title">
         <h1> {{ title }}</h1>
         <div class="blank-space3"></div>
@@ -41,12 +41,6 @@
 
 <style scoped>
 
-h1{
-  font-family: Lust-sans, sans-serif;
-  text-align: center;
-  font-size: var(--header-size);
-  color:var(--white)
-}
 
 .btn{
   background-color: var(--accent-color);
@@ -54,21 +48,17 @@ h1{
   color:var(--white);
 }
 
-
-p{
-  font-family: Quasimoda, sans-serif;
-}
-
 .center-circle{
   display: flex;
   justify-content: center;
-  height:auto;
+  max-height: 100%;
   max-width: 100%;
 }
 
 .main-image{
-  height: 400px;
+  height:500px;
 }
+
 
 .quote{
   text-align: center;

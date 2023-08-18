@@ -38,6 +38,17 @@ html{
   scroll-behavior: smooth;
 }
 
+h1{
+  font-family: Lust-sans, sans-serif;
+  text-align: center;
+  font-size: var(--header-size);
+  color:var(--white)
+}
+
+h3{
+  font-family: Lust-sans, sans-serif;
+}
+
 h3,p,h1{
   color: var(--white);
 }
@@ -48,6 +59,7 @@ h3{
 
 p{
   font-weight: lighter;
+  font-family: Quasimoda, sans-serif;
 }
 
 .blank-space1{
