@@ -5,6 +5,7 @@
         <p>Month:<input type="number" id="month" min="1" max="12" ></p>
         <p> Day:<input type="number" id="day" min="1" max="31"></p> 
         <a id="animated" v-on:click="zodiac"  class="button">Find your zodiac sign! </a>
+        <img id="photo" src="" alt="">
         <p id= "space"> Your zodiac sign is <span id="output"></span> </p>  
         <p id="characteristic"></p>
     </div>
@@ -119,7 +120,7 @@
 
 <script>
 
-import AquariusSign from '../components/AquariusSign.vue';
+    import AquariusSign from '../components/AquariusSign.vue';
     import PiscesSign from '../components/PiscesSign.vue';   
     import AriesSign from '../components/AriesSign.vue';
     import TaurusSign from '../components/TaurusSign.vue';
