@@ -34,9 +34,6 @@
     </div>
   </div>
 
-
-
-  
 </template>
 
 <style scoped>
@@ -56,7 +53,8 @@
 }
 
 .main-image{
-  height:500px;
+  height:50%;
+  max-width: 100%;
 }
 
 
@@ -75,7 +73,8 @@
    export default {
     data(){
       return {
-        title: "Let's touch the stars"
+        title: "Let's touch the stars",
+        data: {}
       }
     } ,
       name: "HomePage",
@@ -83,8 +82,10 @@
 
 
       },
-      methods: {
+      methods: { 
     },
-};
+
+        
+    };
 
 </script>

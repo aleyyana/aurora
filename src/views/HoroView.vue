@@ -1,6 +1,6 @@
 <template>
 
-    <div class="container">
+    <div class="container birthday">
         <h3>Enter your birthday</h3>
         <p>Month:<input type="number" id="month" min="1" max="12" ></p>
         <p> Day:<input type="number" id="day" min="1" max="31"></p> 
@@ -17,11 +17,11 @@
         <div class="col-12 text-center">
             <h1>The Daily horoscope</h1> 
         </div>
-        <!-- gallery -->
+        <!-- gallery  -->
         <div class="row">
-          <!-- check astro -->
+          <!-- check astro  -->
           <div class="col">
-              <div class="row">
+              <div class="row grid gap-2">
                   <div class="col-xs text-center"> <h6 class="">Aquarius</h6>
                     <br>
                   <img src="../assets/img/aquarius.png">
@@ -32,85 +32,94 @@
                     <br>
                   <img src="../assets/img/pisces.png">
                     <br/>
-                  <button class="btn btn-light"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
+                  <button class="btn btn-light"  @click="togglePisces" ref="PiscestnToggle" >{{ button.text }}</button>
                   </div>
                   <div class="col-xs text-center"> <h6 class="">Aries</h6>
                     <br>
                   <img src="../assets/img/aries.png">
                     <br/>
-                  <button class="btn btn-light"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
+                  <button class="btn btn-light"  @click="toggleAries" ref="AriesbtnToggle" >{{ button.text }}</button>
                   </div>
               </div>
-              <div class="row">
+              <div class="row my-2">
                   <div class="col-xs text-center"> <h6 class="">Taurus</h6>
                     <br>
-                  <img src="../assets/img/aquarius.png">
+                  <img src="../assets/img/taurus.png">
                     <br/>
-                  <button class="btn btn-light"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
+                  <button class="btn btn-light"  @click="toggleTaurus" ref="TaurusbtnToggle" >{{ button.text }}</button>
                   </div>
-                  <div class="col-xs text-center"> <h6 class="">Aquarius</h6>
-                    <br>
-                  <img src="../assets/img/aquarius.png">
-                    <br/>
-                  <button class="btn btn-light"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
-                  </div>
-                  <div class="col-xs text-center"> <h6 class="">Aquarius</h6>
-                    <br>
-                  <img src="../assets/img/aquarius.png">
-                    <br/>
-                  <button class="btn btn-light"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
-                  </div>
+                  <div class="col-xs text-center">
+                  <h6 class="">Gemini</h6>
+                  <br>
+                  <img src="../assets/img/gemini.png">
+                <br/>
+                  <button class="btn btn-light"  @click="toggleGemini" ref="GeminibtnToggle" >{{button.text}}</button>
+                </div>
+                <div class="col-xs text-center">
+                  <h6 class="">Cancer</h6>
+                  <br>
+                  <img src="../assets/img/cancer.png">
+                <br/>
+                  <button class="btn btn-light"  @click="toggleCancer" ref="CancerbtnToggle" >{{button.text}}</button>
+                </div>
               </div>
               <div class="row">
-                  <div class="col-xs text-center"> <h6 class="">Aquarius</h6>
-                    <br>
-                  <img src="../assets/img/aquarius.png">
-                    <br/>
-                  <button class="btn btn-light"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
-                  </div>
-                  <div class="col-xs text-center"> <h6 class="">Aquarius</h6>
-                    <br>
-                  <img src="../assets/img/aquarius.png">
-                    <br/>
-                  <button class="btn btn-light"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
-                  </div>
-                  <div class="col-xs text-center"> <h6 class="">Aquarius</h6>
-                    <br>
-                  <img src="../assets/img/aquarius.png">
-                    <br/>
-                  <button class="btn btn-light"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
-                  </div>
+                <div class="col-xs text-center">
+                  <h6 class="">Leo</h6>
+                  <br>
+                  <img src="../assets/img/leo.png">
+                <br/>
+                  <button class="btn btn-light"  @click="toggleLeo" ref="LeobtnToggle">{{button.text}}</button>
+                </div>
+                <div class="col-xs text-center">
+                  <h6 class="">Virgo</h6>
+                  <br>
+                  <img src="../assets/img/virgo.png">
+                <br/>
+                  <button class="btn btn-light"  @click="toggleVirgo" ref="VirgobtnToggle">{{button.text}}</button>
+                </div>
+                <div class="col-xs text-center">
+                  <h6 class="">Libra</h6>
+                  <br>
+                  <img class="pb-2" src="../assets/img/libra.png">
+                <br/>
+                  <button class="btn btn-light"  @click="toggleLibra" ref="LibrabtnToggle">{{button.text}}</button>
+                </div>
               </div>
               <div class="row">
-                  <div class="col-xs text-center"> <h6 class="">Aquarius</h6>
-                    <br>
-                  <img src="../assets/img/aquarius.png">
-                    <br/>
-                  <button class="btn btn-light"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
-                  </div>
-                  <div class="col-xs text-center"> <h6 class="">Aquarius</h6>
-                    <br>
-                  <img src="../assets/img/aquarius.png">
-                    <br/>
-                  <button class="btn btn-light"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
-                  </div>
-                  <div class="col-xs text-center"> <h6 class="">Aquarius</h6>
-                    <br>
-                  <img src="../assets/img/aquarius.png">
-                    <br/>
-                  <button class="btn btn-light"  @click="toggleAquarius" ref="AquabtnToggle" >{{ button.text }}</button>
-                  </div>
+                <div class="col-xs text-center">
+                  <h6 class="">Scorpio</h6>
+                  <br>
+                  <img src="../assets/img/scorpio.png">
+                <br/>
+                  <button class="btn btn-light"  @click="toggleScorpio" ref="ScorpiobtnToggle">{{button.text}}</button>
+                </div>
+                <div class="col-xs text-center">
+                  <h6 class="">Sagittarius</h6>
+                  <br>
+                  <img class="pb-2" src="../assets/img/sagittarius.png">
+                <br>
+                  <button class="btn btn-light"  @click="toggleSagittarius" ref="SagitbtnToggle">{{button.text}}</button>
+                </div>
+                <div class="col-xs text-center">
+                  <h6 class="">Capricorn</h6>
+                  <br>
+                  <img src="../assets/img/capricorn.png">
+                <br>
+                  <button class="btn btn-light"  @click="toggleCapricorn" ref="CapribtnToggle">{{button.text}}</button>
+                </div>
               </div>
           </div>
-          <!-- result astro -->
+          <!-- result astro  -->
           <div class="col">
+
+            <div class="col-12">
+            <transition name="fade">
             <aquarius-sign
-              v-show="showAquarius"
-              />   
-              <pisces-sign 
-              v-show="showPisces"
-              />
-              
+            v-show="showAquarius"
+            />        
+        </transition>
+      </div>
           </div>
         </div>
 
@@ -120,18 +129,7 @@
 
 <script>
 
-    import AquariusSign from '../components/AquariusSign.vue';
-    import PiscesSign from '../components/PiscesSign.vue';   
-    import AriesSign from '../components/AriesSign.vue';
-    import TaurusSign from '../components/TaurusSign.vue';
-    import GeminiSign from '../components/GeminiSign.vue';   
-    import CancerSign from '../components/CancerSign.vue';
-    import LeoSign from '../components/LeoSign.vue';   
-    import VirgoSign from '../components/VirgoSign.vue';
-    import LibraSign from '../components/LibraSign.vue';   
-    import ScorpioSign from '../components/ScorpioSign.vue';
-    import SagittariusSign from '../components/SagittariusSign.vue';   
-    import CapricornSign from '../components/CapricornSign.vue';
+import AquariusSign from '../components/aquasign.vue';
 
 export default {
 
@@ -141,12 +139,13 @@ export default {
         button:{
           text: 'Today'
         },
+        showAquarius:false,
 
       }
     },
 
     components: {
-      AquariusSign,
+      AquariusSign
   },
 
   methods : {
@@ -160,7 +159,7 @@ export default {
     ){
         result = ("Aquarius");
      document.getElementById("photo").innerHTML="<img src='../assets/img/hands_aquarius.png'width=20%>";
-   document.getElementById("characteristic").innerHTML="Aquarians are extremely vulnerable and sensitive. Although you may often find them being surrounded by many friends but in reality they rarely have close friends and acquaintances. Aquarius is a universal sign which makes them public people. Hence Aquarians are often associated with clubs, organizations and forums and enthusiastically participate in intellectual discussions. Aquarians are great communicators as long as they are within their mental realm.";
+      document.getElementById("characteristic").innerHTML="Aquarians are extremely vulnerable and sensitive. Although you may often find them being surrounded by many friends but in reality they rarely have close friends and acquaintances. Aquarius is a universal sign which makes them public people. Hence Aquarians are often associated with clubs, organizations and forums and enthusiastically participate in intellectual discussions. Aquarians are great communicators as long as they are within their mental realm.";
   
     }
 
@@ -234,6 +233,11 @@ export default {
     }
  document.getElementById("output").innerHTML= result;
     },
+
+  toggleAquarius () {
+    this.showAquarius = !this.showAquarius;
+    this.$refs.AquabtnToggle.innerText = this.showAquarius?'Hide':'Today';
+    }
   }
 };
 
@@ -241,6 +245,11 @@ export default {
 </script>
 
 <style scoped>
+
+.birthday{
+  display: center;
+  justify-self:center;
+}
 
 .btn{
   border-radius: 25px;
