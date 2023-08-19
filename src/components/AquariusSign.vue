@@ -39,8 +39,6 @@ const options = {
     timePeriod: 'daily'
   },
   headers: {
-    'X-RapidAPI-Key': '62bc3eb8bdmshe8948ea88763b55p1cf83ajsna599aeb1fcc4',
-    'X-RapidAPI-Host': 'daily-horoscope-api.p.rapidapi.com'
   }
 };
 

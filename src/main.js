@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import './assets/main.css';
 import axios from 'axios';
+require("dotenv").config();
 
 
 const app = createApp(App)
