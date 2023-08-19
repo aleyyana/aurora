@@ -4,11 +4,12 @@
   --black-background:#000;
   --secondary-color:#767FB0;
   --accent-color:#A1C084;
-  /* --header-size: 3em;
-  --title-size:1.5em;
-  --quote-size:2vw;
-  --undertitle-size: 1vw;
-  --content-size:0.4em; */
+  --header-size: 105vw;
+  --title-size:3vw;
+  --quote-size:3vw;
+  --undertitle-size: 1.5vw;
+  --content-size:1vw;
+  --author-size:0.7vw;
 }
 
 

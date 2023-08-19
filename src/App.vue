@@ -41,25 +41,25 @@ html{
 h1{
   font-family: Lust-sans, sans-serif;
   text-align: center;
-  font-size: var(--header-size);
-  color:var(--white)
+  color:var(--white);
+  /* font-size: var(--quote-size); */
 }
 
 h3, h5{
   font-family: Lust-sans, sans-serif;
+  color:var(--main-color);
+  /* font-size:var(--undertitle-size) */
 }
 
-h3,p,h1{
+p,h1{
   color: var(--white);
 }
 
-h3, h5{
-  color:var(--main-color);
-}
 
 p{
   font-weight: lighter;
   font-family: Quasimoda, sans-serif;
+  /* font-size: var(--content-size); */
 }
 
 .blank-space1{
@@ -86,7 +86,7 @@ height: 45px;
 .nav-link{
   font-family: Quasimoda, sans-serif;
   color: var(--white);
-  font-size: 20px;
+  /* font-size: 20px; */
 
 }
 

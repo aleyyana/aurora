@@ -6,7 +6,7 @@
       <h5>{{ quote.text }}</h5>
     </div>
     <div class="quote-author">
-      <p>{{ quote.author === null ? 'Unknown' : quote.author }}</p>
+      <p class="author">{{ quote.author === null ? 'Unknown' : quote.author }}</p>
     </div>
   </section>
     
@@ -31,5 +31,13 @@ export default{
 </script>
 
 <style scoped>
+
+h5{
+  font-family: Quasimoda,sans-serif;
+}
+
+.author{
+  font-size:var(--author-size)
+}
 
 </style>

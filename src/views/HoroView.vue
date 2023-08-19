@@ -1,9 +1,9 @@
 <template>
 
     <div class="container birthday">
-        <h3>Enter your birthday</h3>
-        <p>Month:<input type="number" id="month" min="1" max="12" ></p>
-        <p> Day:<input type="number" id="day" min="1" max="31"></p> 
+        <h1>Enter your birthday</h1>
+        <p> Day:<input type="number" id="day" min="1" max="31" class="btn btn-light" ></p> 
+        <p>Month:<input type="number" id="month" min="1" max="12" class="btn btn-light" ></p>
         <a id="animated" v-on:click="zodiac"  class="button">Find your zodiac sign! </a>
         <img id="photo" src="" alt="">
         <p id= "space"> Your zodiac sign is <span id="output"></span> </p>  
@@ -12,97 +12,97 @@
 
     <div class="blank-space2"></div>
 
-    <div class="container"> 
+    <div class="container-fluid astro_background"> 
       <!-- title -->
         <div class="col-12 text-center">
-            <h1>The Daily horoscope</h1> 
+            <h1>The Daily horoscope quote</h1> 
         </div>
         <!-- gallery  -->
-        <div class="row">
+        <div class="row astro_elements gap-4">
           <!-- check astro  -->
-          <div class="col">
-              <div class="row grid gap-2">
-                  <div class="col-xs text-center">
+          <div class="col ">
+              <div class="row">
+                  <div class="col col-sm col-xs-4 text-center">
                     <br>
                   <img src="../assets/img/aquarius.png">
                     <br/>
-                  <button class="btn btn-light"  @click="getQuote" ref="" > Aquarius</button>
+                  <a class="signs" v-on:click="getQuote">Aquarius</a>
                   </div>
-                  <div class="col-xs text-center">
+                  <div class="col col-sm col-xs-4 text-center">
                     <br>
                   <img src="../assets/img/pisces.png">
                     <br/>
-                  <button class="btn btn-light"  @click="getQuote" ref="PiscestnToggle" > Pisces</button>
+                  <a class="signs" v-on:click="getQuote">Pisces</a>
                   </div>
-                  <div class="col-xs text-center">
+                  <div class="col col-sm col-xs-4 text-center">
                     <br>
                   <img src="../assets/img/aries.png">
                     <br/>
-                  <button class="btn btn-light"  @click="getQuote" ref="AriesbtnToggle" > Aries</button>
+                  <a class="signs" v-on:click="getQuote">Aries</a>
                   </div>
               </div>
               <div class="row my-2">
-                  <div class="col-xs text-center">
+                  <div class="col col-sm col-xs-4 text-center">
                     <br>
                   <img src="../assets/img/taurus.png">
                     <br/>
-                  <button class="btn btn-light"  @click="getQuote" ref="TaurusbtnToggle" > Taurus </button>
+                  <a class="signs" v-on:click="getQuote">Taurus</a>
                   </div>
-                  <div class="col-xs text-center">
+                  <div class="col col-sm col-xs-4 text-center">
   >
                   <br>
                   <img src="../assets/img/gemini.png">
                 <br/>
-                  <button class="btn btn-light"  @click="toggleGemini" ref="GeminibtnToggle" > Gemini </button>
+                  <a class="signs" v-on:click="getQuote">Gemini</a>
                 </div>
-                <div class="col-xs text-center">
+                <div class="col col-sm col-xs-4 text-center">
   >
                   <br>
                   <img src="../assets/img/cancer.png">
                 <br/>
-                  <button class="btn btn-light"  @click="toggleCancer" ref="CancerbtnToggle" >Cancer</button>
+                  <a class="signs" v-on:click="getQuote">Cancer</a>
                 </div>
               </div>
               <div class="row">
-                <div class="col-xs text-center">
+                <div class="col col-sm col-xs-4 text-center">
                   <br>
                   <img src="../assets/img/leo.png">
                 <br/>
-                  <button class="btn btn-light"  @click="getQuote" ref="LeobtnToggle">Leo</button>
+                  <a class="signs" v-on:click="getQuote">Leo</a>
                 </div>
-                <div class="col-xs text-center">
+                <div class="col col-sm col-xs-4 text-center">
 >
                   <br>
                   <img src="../assets/img/virgo.png">
                 <br/>
-                  <button class="btn btn-light"  @click="getQuote" ref="VirgobtnToggle">Virgo</button>
+                  <a class="signs" v-on:click="getQuote">Virgo</a>
                 </div>
-                <div class="col-xs text-center">
+                <div class="col col-sm col-xs-4 text-center">
 >
                   <br>
                   <img class="pb-2" src="../assets/img/libra.png">
                 <br/>
-                  <button class="btn btn-light"  @click="getQuote" ref="LibrabtnToggle">Libra</button>
+                  <a class="signs" v-on:click="getQuote">Libra</a>
                 </div>
               </div>
               <div class="row">
-                <div class="col-xs text-center">
+                <div class="col col-sm col-xs-4 text-center">
                   <br>
                   <img src="../assets/img/scorpio.png">
                 <br/>
-                  <button class="btn btn-light"  @click="getQuote" ref="ScorpiobtnToggle">Scorpio</button>
+                  <a class="signs" v-on:click="getQuote">Scorpio</a>
                 </div>
-                <div class="col-xs text-center">
+                <div class="col col-sm col-xs-4 text-center">
                   <br>
                   <img class="pb-2" src="../assets/img/sagittarius.png">
                 <br>
-                  <button class="btn btn-light"  @click="getQuote" ref="SagitbtnToggle">Sagittarius</button>
+                  <a class="signs" v-on:click="getQuote">Sagittarius</a>
                 </div>
-                <div class="col-xs text-center">
+                <div class="col col-sm col-xs-4 text-center">
                   <br>
                   <img src="../assets/img/capricorn.png">
                 <br>
-                  <button class="btn btn-light"  @click="getQuote" ref="CapribtnToggle">Capricorn</button>
+                  <a class="signs" v-on:click="getQuote">Capricorn</a>
                 </div>
               </div>
           </div>
@@ -252,6 +252,19 @@ export default {
 
 <style scoped>
 
+.astro_background{
+  background-color: black;
+}
+
+a, .signs{
+  color: var(--accent-color);
+}
+
+.astro_elements{
+max-width: 100%;
+ height:auto;
+}
+
 .birthday{
   display: center;
   justify-self:center;
@@ -260,5 +273,7 @@ export default {
 .btn{
   border-radius: 25px;
 }
+
+
 
 </style>
