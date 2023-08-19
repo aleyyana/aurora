@@ -5,11 +5,11 @@
   --secondary-color:#767FB0;
   --accent-color:#A1C084;
   --header-size: 105vw;
-  --title-size:3vw;
+  --title-size:calc(1.5rem + 3vw);
   --quote-size:3vw;
   --undertitle-size: 1.5vw;
-  --content-size:1vw;
-  --author-size:0.7vw;
+  --content-size:1.5vw;
+  --author-size:1vw;
 }
 
 

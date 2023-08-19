@@ -59,7 +59,7 @@ p,h1{
 p{
   font-weight: lighter;
   font-family: Quasimoda, sans-serif;
-  /* font-size: var(--content-size); */
+  font-size: var(--content-size);
 }
 
 .blank-space1{
