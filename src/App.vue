@@ -45,7 +45,7 @@ h1{
   color:var(--white)
 }
 
-h3{
+h3, h5{
   font-family: Lust-sans, sans-serif;
 }
 
@@ -53,7 +53,7 @@ h3,p,h1{
   color: var(--white);
 }
 
-h3{
+h3, h5{
   color:var(--main-color);
 }
 

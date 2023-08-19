@@ -1,11 +1,12 @@
 <template>
 
-<section class="quote">
+<section class="quote container">
+  <div class="img"></div>
     <div class="quote-body">
-      {{ quote.text }}
+      <h5>{{ quote.text }}</h5>
     </div>
     <div class="quote-author">
-      {{ quote.author === null ? 'Unknown' : quote.author }}
+      <p>{{ quote.author === null ? 'Unknown' : quote.author }}</p>
     </div>
   </section>
     
@@ -18,11 +19,10 @@ export default{
 
   data(){
     return{
-      data:{}
+
     }
   },
   methods : {
-
   },
 
   props: ["quote"],
