@@ -22,19 +22,19 @@
           <!-- check astro  -->
           <div class="col ">
               <div class="row">
-                  <div class="col-4 col-xs-6 text-center">
+                  <div class="col-4 col-xs-4 text-center">
                     <br>
                   <img src="../assets/img/aquarius.png">
                     <br/>
                   <a class="signs" v-on:click="getQuote">Aquarius</a>
                   </div>
-                  <div class="col-4 col-xs-6 text-center">
+                  <div class="col-4 col-xs-4 text-center">
                     <br>
                   <img src="../assets/img/pisces.png">
                     <br/>
                   <a class="signs" v-on:click="getQuote">Pisces</a>
                   </div>
-                  <div class="col-4 col-xs-6 text-center">
+                  <div class="col-4 col-xs-4 text-center">
                     <br>
                   <img src="../assets/img/aries.png">
                     <br/>
@@ -42,21 +42,20 @@
                   </div>
               </div>
               <div class="row my-2">
-                  <div class="col-4 col-xs-6 text-center">
+                  <div class="col-4 col-xs-4 text-center">
                     <br>
                   <img src="../assets/img/taurus.png">
                     <br/>
                   <a class="signs" v-on:click="getQuote">Taurus</a>
                   </div>
-                  <div class="col-4 col-xs-6 text-center">
-  >
+                  <div class="col-4 col-xs-4 text-center">
+  
                   <br>
                   <img src="../assets/img/gemini.png">
                 <br/>
                   <a class="signs" v-on:click="getQuote">Gemini</a>
                 </div>
-                <div class="col-4 col-xs-6 text-center">
-  >
+                <div class="col-4 col-xs-4 text-center">
                   <br>
                   <img src="../assets/img/cancer.png">
                 <br/>
@@ -64,20 +63,20 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-4 col-xs-6 text-center">
+                <div class="col-4 col-xs-4 text-center">
                   <br>
                   <img src="../assets/img/leo.png">
                 <br/>
                   <a class="signs" v-on:click="getQuote">Leo</a>
                 </div>
-                <div class="col-4 col-xs-6 text-center">
+                <div class="col-4 col-xs-4 text-center">
 >
                   <br>
                   <img src="../assets/img/virgo.png">
                 <br/>
                   <a class="signs" v-on:click="getQuote">Virgo</a>
                 </div>
-                <div class="col-4 col-xs-6 text-center">
+                <div class="col-4 col-xs-4 text-center">
 >
                   <br>
                   <img class="pb-2" src="../assets/img/libra.png">
@@ -86,19 +85,19 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-4 col-xs-6 text-center">
+                <div class="col-4 col-xs-4 text-center">
                   <br>
                   <img src="../assets/img/scorpio.png">
                 <br/>
                   <a class="signs" v-on:click="getQuote">Scorpio</a>
                 </div>
-                <div class="col-4 col-xs-6 text-center">
+                <div class="col-4 col-xs-4 text-center">
                   <br>
                   <img class="pb-2" src="../assets/img/sagittarius.png">
                 <br>
                   <a class="signs" v-on:click="getQuote">Sagittarius </a>
                 </div>
-                <div class="col-4 col-xs-6 text-center">
+                <div class="col-4 col-xs-4 text-center">
                   <br>
                   <img src="../assets/img/capricorn.png">
                 <br>
@@ -107,7 +106,7 @@
               </div>
           </div>
           <!-- result astro  -->
-          <div class="col">
+          <div class="col-5">
 
             <QuoteComponent :quote="quote" />
           </div>
