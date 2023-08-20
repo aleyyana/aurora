@@ -1,7 +1,7 @@
 <template>
   <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-sm">
           <h3>About Aurora</h3>
           <p>Aurora is a website about astrology. It's mostly based on the sun sign, as you can see on the video.
             Aurora means "the dawn". Aurora is a natural light display in Earth's sky mainly in high latitude regions.
@@ -9,10 +9,10 @@
             Aurora want its user to have a bit of fun for a short amount of time. Here you can see what quote astrology has for you today
             and you'll be able to check your compatibility with everyone.  </p>
         </div>
-        <div class="col">
+        <div class="col-sm">
           <img src="../assets/img/logo_2.png" class="responsive" alt="">
         </div>
-        <div class="col">
+        <div class="col-sm">
           <h3>About Astrology</h3>
           <p> <span>"Astrology is a range of divinatory practices, recognized as pseudoscientific since the 18th century".</span>That's the definition
           Wikipedia made about it. But in reality, a lot of people think it's childish. But astrology is made for people who wants to have
@@ -85,7 +85,7 @@ export default{
 
 .responsive{
   height:auto;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .responsive_video{
