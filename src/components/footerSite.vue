@@ -7,6 +7,7 @@
     <div class="links col col-xs-12 col-sm-3 col-sm-pull-6">
       <RouterLink class="footer-links nav"  to="/">Home</RouterLink>
       <RouterLink class="footer-links nav" to="/horoscope">Your Horoscope</RouterLink>
+      <RouterLink class="nav-item nav-link" to="/about">About</RouterLink>
     </div>
         <div class="copyright col-xs-12 col-sm-3 col-sm-pull-6">
       <p> &copy; Anne-Sophie El Sayyed </p>
